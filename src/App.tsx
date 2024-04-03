@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import tel from "./assets/tel.png";
 import { SlBasket } from "react-icons/sl";
@@ -12,7 +12,6 @@ interface Product {
 
 function App() {
   const [data, setData] = useState<Product[]>([]);
-  const [showAlert, setShowAlert] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ name: '', price: '', description: '' });
   const [loading, setLoading] = useState(false);
@@ -63,7 +62,6 @@ function App() {
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
-        setShowAlert(true);
         fetchData();
         setFormData({ name: '', price: '', description: '' }); 
         setShowModal(false);
