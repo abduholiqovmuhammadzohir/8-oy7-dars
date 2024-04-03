@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.card {
+
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 38px -25px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+
+.cards .plus {
+    cursor: pointer;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s;
+    margin-left: 80px;
+}
+
+.cards .plus:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.cards {
+    max-width: 1450px;
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.card img {
+    width: 200px;
+    height: 230px;
+}
+
+.card h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 27px;
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(226, 162, 43);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(226, 162, 43);
+    color: white;
+    transition: all 0.5s;
+}
+
+.card button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.savat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.savat h4 {
+    font-size: 23px;
+    cursor: pointer;
+    color: blue;
+}
+
+
+.modal-body input{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(153, 147, 147);
+}
+
+.loader{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(227, 127, 40);
+    margin-top: 30px;
+}
